@@ -27,8 +27,11 @@ This project conducts an in-depth unsupervised clustering analysis on an unlabel
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone [https://github.com/lilika67/sound-clustering.git](https://github.com/lilika67/sound-clustering.git)
-   cd Clustering_assignment_Liliane_Kayitesi
+   git clone https://github.com/lilika67/sound-clustering.git
+   cd sound-clustering
+   
+2.Place the dataset file (unlabelled_sounds.zip) in the project root directory.
+3.Install the required dependencies using the command provided in the Prerequisites section.
    
 ## Project Structure
 
