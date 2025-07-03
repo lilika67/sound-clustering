@@ -1,85 +1,62 @@
+# Sound Data Clustering Analysis
 
-# 🧠 Clustering Assignment - Liliane Kayitesi
+## Overview
 
-This project explores unsupervised learning using clustering techniques on a dataset related to **annual income and spending score** of customers. The goal is to segment customers into groups that exhibit similar purchasing behaviors using clustering algorithms.
+This project conducts an in-depth unsupervised clustering analysis on an unlabeled dataset of 3000 sound recordings, leveraging Mel Spectrogram features to uncover natural groupings. It employs dimensionality reduction techniques (PCA and t-SNE) for visualization and evaluates clustering performance using K-Means and DBSCAN. Key metrics such as a Silhouette Score of 0.8660 and a Davies-Bouldin Index of 0.5379 demonstrate high-quality clusters, making this project valuable for audio classification and pattern recognition tasks.
 
-## 📊 Project Description
+## Features
 
-Clustering is an important machine learning task used to discover hidden patterns or groupings in data without prior labeling. In this assignment, we:
-- Load and explore the dataset
-- Visualize the data
-- Apply **K-Means clustering**
-- Determine the optimal number of clusters using the **Elbow Method**
-- Interpret clustering results and visualize them
+- Extracts Mel Spectrogram features (128 bands) from `.wav` or `.mp3` audio files.
+- Applies PCA and t-SNE for effective 3D visualization of high-dimensional data.
+- Implements K-Means with the elbow method and silhouette scoring for optimal cluster selection.
+- Utilizes DBSCAN for density-based clustering with customizable parameters.
+- Provides detailed performance metrics (Silhouette Score, Davies-Bouldin Index) and interactive visualizations.
+- Includes robust data preprocessing (padding, normalization) to handle variable-length features.
 
-## 🔍 Dataset
-
-The dataset used includes:
-- `Annual Income (k$)`
-- `Spending Score (1-100)`
-
-These features are analyzed to segment customers into groups for targeted marketing or business decisions.
-
-## 🧰 Technologies & Libraries
-
-The following libraries are used:
-- Python 3.x
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-learn (for clustering)
-
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
-Ensure you have Python installed. You can install required libraries using pip:
+- Python 3.8 or higher
+- Required libraries: `numpy`, `pandas`, `librosa`, `matplotlib`, `seaborn`, `scikit-learn`, `zipfile`
+- Install dependencies using:
+  ```bash
+  pip install numpy pandas librosa matplotlib seaborn scikit-learn zipfile
 
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn
-```
+## Installation
 
-### 📥 Clone the Repository
+1. Clone the repository to your local machine:
+   ```bash
+   git clone [https://github.com/lilika67/sound-clustering.git](https://github.com/lilika67/sound-clustering.git)
+   cd Clustering_assignment_Liliane_Kayitesi
+   
+## Project Structure
 
-```bash
-git clone https://github.com/yourusername/clustering-assignment.git
-cd clustering-assignment
-```
+- `Clustering_assignment_Liliane_Kayitesi .ipynb`: Core Jupyter notebook with code, visualizations, and markdown analysis.
+- `unlabelled_sounds.zip`: Dataset of 3000 sound recordings.
+- `README.md`:  documentation file.
 
-### 📂 Project Structure
+## Results
 
-```
-.
-├── Clustering_assignment_Liliane_Kayitesi.ipynb
-├── README.md
-└── (optional) data/
-```
+- **K-Means Performance**: Achieved a Silhouette Score of 0.8660 and Davies-Bouldin Index of 0.5379, indicating well-defined, separated clusters.
+- **DBSCAN Outcome**: Produced 0 clusters, suggesting the data’s sparsity exceeds DBSCAN’s density threshold.
+- **Dimensionality Reduction**: t-SNE visualizations outperformed PCA by preserving non-linear structures, enhancing cluster interpretability.
 
-### ▶️ Running the Project Locally
+## Related visualizations 
 
-1. Open a terminal and navigate to the project directory.
-2. Launch Jupyter Notebook:
+1. Initial Visualization (Without Dimensionality Reduction)
 
-```bash
-jupyter notebook
-```
+   ![image](https://github.com/user-attachments/assets/a68ace9d-d97f-423d-9ce7-530be44377bd)
 
-3. Open the `Clustering_assignment_Liliane_Kayitesi.ipynb` notebook.
-4. Run the cells in order to see the clustering steps and visualizations.
+2.PCA nad T-SNE 3D Visualization
 
-## 📈 Results
+![image](https://github.com/user-attachments/assets/ce60bbe1-cf71-49df-98ca-c766ae921d3d)
 
-- Optimal number of clusters determined via the **Elbow Method**
-- Final clusters visualized using scatter plots
-- Insight into how customers group based on spending behavior and income
+3. Final visualization using t-SNE
 
-## 📬 Contributions
+   ![image](https://github.com/user-attachments/assets/58cf8ef3-ea21-41f2-9226-b132a41469fb)
 
-Feel free to fork this repo, make improvements or apply the clustering logic to your own datasets. Pull requests are welcome!
 
-## 👩🏽‍💻 Author
 
-Liliane Kayitesi  
-Rwanda  
-[LinkedIn](https://www.linkedin.com/) | [GitHub](https://github.com/)
+  
+  
