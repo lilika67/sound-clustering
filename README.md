@@ -33,7 +33,7 @@ This project conducts an in-depth unsupervised clustering analysis on an unlabel
 ## Project Structure
 
 - `Clustering_assignment_Liliane_Kayitesi .ipynb`: Core Jupyter notebook with code, visualizations, and markdown analysis.
-- `unlabelled_sounds.zip`: Dataset of 3000 sound recordings.
+- `Data  - unlabelled_sounds.zip`: Dataset of 3000 sound recordings.
 - `README.md`:  documentation file.
 
 ## Results
